@@ -1,0 +1,12 @@
+.controls {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+  background-color: rgb(43, 211, 65);
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 0 3px;
+}
