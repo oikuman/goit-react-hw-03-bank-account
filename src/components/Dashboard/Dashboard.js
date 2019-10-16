@@ -49,7 +49,7 @@ class Dashboard extends Component {
 
   handleDeposit = e => {
     const amount = Number(e.target.parentElement.firstElementChild.value);
-
+    e.target.parentElement.firstElementChild.value = '';
     if (amount) {
       const transaction = {
         id: v4(),
@@ -73,7 +73,7 @@ class Dashboard extends Component {
 
   handleWithdraw = e => {
     const amount = Number(e.target.parentElement.firstElementChild.value);
-
+    e.target.parentElement.firstElementChild.value = '';
     if (amount) {
       const { balance } = this.state;
       if (amount > balance) {
